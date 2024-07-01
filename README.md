@@ -1,4 +1,5 @@
-![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/42e3a8fc-49a0-411e-95f3-09665ada6b99)# Tugas Praktikum { UAS } <img src=https://logos-download.com/wp-content/uploads/2016/05/MySQL_logo_logotype.png width="130px" >
+![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/d473e93d-1af8-408d-b8a2-c048ce256738)
+# Tugas Praktikum { UAS } <img src=https://logos-download.com/wp-content/uploads/2016/05/MySQL_logo_logotype.png width="130px" >
 
 
 |**Nama**|**NIM**|**Kelas**|**Matkul**|
