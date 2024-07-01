@@ -7,7 +7,7 @@
 
 # Studi Kasus : Sub Query
 
-## Soal Praktikum 7
+## Soal Praktikum UAS
 ![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/ed69fe80-dab7-4ecb-a74f-6ddd6e4e0531)
 > **Keterangan** : Terdapat 5 tabel yang terdiri dari tabel Perusahaan, Departemen, Karyawan, Project dan Project Detail.
 
@@ -96,7 +96,8 @@ INSERT INTO Project (id_proj, nama, tgl_mulai, tgl_selesai, status) VALUES
 SELECT * FROM Project;
 ```
 #### *Output Tabel Project :*
-![image](https://github.com/nurulaisyah14/TugasPraktikum7/assets/148174512/69d5b742-dfdf-499a-bd82-bf3317dec4f2)
+![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/1f911e2e-42b7-46b0-b0cd-def686f97394)
+
 
 
 
@@ -124,7 +125,7 @@ INSERT INTO Project_detail (id_proj, nik) VALUES
 SELECT * FROM Project_detail;
 ```
 #### *Output Tabel Project Detail :*
-![image](https://github.com/nurulaisyah14/TugasPraktikum7/assets/148174512/07f6c121-ad58-4661-ab6c-c54a08b10c03)
+
 
 
 
@@ -141,7 +142,7 @@ SELECT nik, nama, id_dept FROM Karyawan WHERE id_dept = (SELECT id_dept FROM Kar
 
 **Output :**
 
-![image](https://github.com/nurulaisyah14/TugasPraktikum7/assets/148174512/b2a8d5bb-62e8-4e95-b9d7-f409d754fb54)
+![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/94609d06-cbd1-4c0b-b696-91fac1569fdd)
 
 
 
@@ -155,7 +156,7 @@ SELECT nik, nama, id_dept, gaji_pokok FROM karyawan WHERE gaji_pokok > (SELECT A
 
 **Output :**
 
-![image](https://github.com/nurulaisyah14/TugasPraktikum7/assets/148174512/cd873162-6687-461d-a27a-9a1c26db7c48)
+![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/33a81ad3-1aaa-4d90-b846-0b22b83b0f08)
 
 
 
@@ -168,7 +169,7 @@ SELECT nik, nama FROM Karyawan WHERE id_dept IN (SELECT id_dept FROM Karyawan WH
 
 **Output :**
 
-![image](https://github.com/nurulaisyah14/TugasPraktikum7/assets/148174512/3c2ebc12-06ec-49d5-a361-7914a8b510c2)
+![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/b60c025a-4a81-4e86-9ac4-f4a323f8c949)
 
 
 
@@ -181,7 +182,8 @@ SELECT karyawan.nik, karyawan.nama, karyawan.id_dept FROM karyawan JOIN departem
 
 **Output :**
 
-![image](https://github.com/nurulaisyah14/TugasPraktikum7/assets/148174512/3b7e9e5e-14ef-4e3c-9d7f-cb38ae5b05d3)
+![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/a94dffd7-3a58-497f-8b94-332a2e97baf2)
+
 
 
 ### 5. Menampilkan Nama Proyek yang Diikuti oleh Karyawan dengan Gaji Pokok Kurang dari 3 Juta
@@ -193,4 +195,5 @@ SELECT DISTINCT k1.nik, k1.nama FROM karyawan k1 JOIN karyawan k2 ON k1.id_dept 
 
 **Output :**
 
-![image](https://github.com/nurulaisyah14/TugasPraktikum7/assets/148174512/83373363-8891-40db-9e33-7063b0bdcbe3)
+![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/ff406b5a-2461-4835-adc4-96d52efeea00)
+
