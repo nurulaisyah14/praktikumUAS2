@@ -6,8 +6,6 @@
 |----|---|-----|------|
 |Nurul Aisyah|312310476|TI.23.A.5|Basis Data|
 
-# Studi Kasus : Sub Query
-
 ## Soal Praktikum UAS
 ![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/8d4524f8-5847-4fd5-8fa2-d1c30cb464bf)
 > **Keterangan** : Terdapat 5 tabel yang terdiri dari tabel Perusahaan, Departemen, Karyawan, Project dan Project Detail.
