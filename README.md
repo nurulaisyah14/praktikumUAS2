@@ -14,7 +14,7 @@
 
 ## Latihan Praktikum UAS
 
-### 1. Menampilkan Nama Karyawan yang Berada di Departemen yang Dipimpinoleh Manajer dengan Nama 'Rika'
+### 1. Menampilkan Nama Karyawan yang Berada di Departemen yang Dipimpin oleh Manajer dengan Nama 'Rika'
 **Script :**
 
 ```sql
