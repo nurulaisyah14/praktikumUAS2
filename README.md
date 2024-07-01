@@ -18,7 +18,12 @@
 **Script :**
 
 ```sql
-SELECT nik, nama, id_dept FROM Karyawan WHERE id_dept = (SELECT id_dept FROM Karyawan WHERE nama = 'Dika');
+SELECT Karyawan.nik, Karyawan.nama
+FROM Karyawan
+JOIN Departemen ON Karyawan.id_dept = Departemen.id_dept
+WHERE Departemen.manajer_nik = (
+    SELECT nik FROM Karyawan WHERE nama = 'Rika'
+);
 ```
 
 **Output :**
@@ -32,7 +37,12 @@ SELECT nik, nama, id_dept FROM Karyawan WHERE id_dept = (SELECT id_dept FROM Kar
 **Script :**
 
 ```sql
-SELECT nik, nama, id_dept, gaji_pokok FROM karyawan WHERE gaji_pokok > (SELECT AVG(gaji_pokok) FROM Karyawan) ORDER BY gaji_pokok DESC;
+SELECT DISTINCT Project.nama
+FROM Project
+JOIN Project_detail ON Project.id_proj = Project_detail.id_proj
+JOIN Karyawan ON Project_detail.nik = Karyawan.nik
+JOIN Departemen ON Karyawan.id_dept = Departemen.id_dept
+WHERE Departemen.nama = 'RnD';
 ```
 
 **Output :**
@@ -45,7 +55,11 @@ SELECT nik, nama, id_dept, gaji_pokok FROM karyawan WHERE gaji_pokok > (SELECT A
 **Script :**
 
 ```sql
-SELECT nik, nama FROM Karyawan WHERE id_dept IN (SELECT id_dept FROM Karyawan WHERE nama LIKE '%K%');
+SELECT Karyawan.nik, Karyawan.nama, COUNT(Project_detail.id_proj) AS jumlah_proyek
+FROM Karyawan
+JOIN Project_detail ON Karyawan.nik = Project_detail.nik
+GROUP BY Karyawan.nik, Karyawan.nama
+HAVING COUNT(Project_detail.id_proj) > 1;
 ```
 
 **Output :**
@@ -58,7 +72,12 @@ SELECT nik, nama FROM Karyawan WHERE id_dept IN (SELECT id_dept FROM Karyawan WH
 **Script :**
 
 ```sql
-SELECT karyawan.nik, karyawan.nama, karyawan.id_dept FROM karyawan JOIN departemen ON karyawan.id_dept = departemen.id_dept WHERE departemen.id_p = 'P01';
+SELECT Project.nama, COUNT(Project_detail.nik) AS jumlah_karyawan
+FROM Project
+JOIN Project_detail ON Project.id_proj = Project_detail.id_proj
+GROUP BY Project.nama
+ORDER BY jumlah_karyawan DESC
+LIMIT 1;
 ```
 
 **Output :**
@@ -71,7 +90,11 @@ SELECT karyawan.nik, karyawan.nama, karyawan.id_dept FROM karyawan JOIN departem
 **Script :**
 
 ```sql
-SELECT DISTINCT k1.nik, k1.nama FROM karyawan k1 JOIN karyawan k2 ON k1.id_dept = k2.id_dept WHERE k1.gaji_pokok > (SELECT AVG(gaji_pokok) FROM karyawan WHERE nama LIKE '%K%');
+SELECT DISTINCT P.nama
+FROM Project P
+JOIN Project_detail PD ON P.id_proj = PD.id_proj
+JOIN Karyawan K ON PD.nik = K.nik
+WHERE K.gaji_pokok < 3000000;
 ```
 
 **Output :**
