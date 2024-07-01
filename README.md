@@ -1,4 +1,3 @@
-![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/d473e93d-1af8-408d-b8a2-c048ce256738)
 # Tugas Praktikum { UAS } <img src=https://logos-download.com/wp-content/uploads/2016/05/MySQL_logo_logotype.png width="130px" >
 
 
@@ -7,6 +6,7 @@
 |Nurul Aisyah|312310476|TI.23.A.5|Basis Data|
 
 ## Soal Praktikum UAS
+![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/d473e93d-1af8-408d-b8a2-c048ce256738)
 ![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/8d4524f8-5847-4fd5-8fa2-d1c30cb464bf)
 > **Keterangan** : Terdapat 5 tabel yang terdiri dari tabel Perusahaan, Departemen, Karyawan, Project dan Project Detail.
 
