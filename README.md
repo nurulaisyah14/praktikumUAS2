@@ -126,6 +126,7 @@ INSERT INTO Project_detail (id_proj, nik) VALUES
 SELECT * FROM Project_detail;
 ```
 #### *Output Tabel Project Detail :*
+![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/ebd2b3e9-cb2a-4490-98aa-dd8f5b82f697)
 
 
 
