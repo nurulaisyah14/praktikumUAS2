@@ -101,3 +101,4 @@ WHERE K.gaji_pokok < 3000000;
 
 ![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/ff406b5a-2461-4835-adc4-96d52efeea00)
 
+# SELESAI
