@@ -9,7 +9,7 @@
 # Studi Kasus : Sub Query
 
 ## Soal Praktikum UAS
-![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/ed69fe80-dab7-4ecb-a74f-6ddd6e4e0531)
+![image](https://github.com/nurulaisyah14/praktikumUAS2/assets/148174512/8d4524f8-5847-4fd5-8fa2-d1c30cb464bf)
 > **Keterangan** : Terdapat 5 tabel yang terdiri dari tabel Perusahaan, Departemen, Karyawan, Project dan Project Detail.
 
 ### *Script SQL berdasarkan Tabel Perusahaan*
